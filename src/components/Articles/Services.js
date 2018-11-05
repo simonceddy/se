@@ -13,10 +13,7 @@ class Services extends Component
 <li>Interactive multimedia development (touchscreen displays, online exhibibtions),</li>
 </ul>
  <br></br>
-I.T. Support services are also available.
-
-<a href="/contact">Contact Simon</a>
-to book a visit).
+I.T. Support services are also available. <a href="/contact">Contact Simon</a> to book a visit.
  <br></br>
  <br></br>
 Simon also offers audio engineering services (please <a href="./contact">Contact Simon</a> for more information).

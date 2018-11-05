@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 //import renderHTML from 'react-render-html';
 import './Article.scss';
 
-class Article extends Component
+class Paragraph extends Component
 {
     render() {
         return (
             <div>
-                <h1>{this.props.extra.title}</h1>
-                {this.props.extra.content()}
+                <div className="container content-paragraph">
+                    {this.props.extra.content}
+                </div>
             </div>
         );
     }
 }
 
-export default Article;
+export default Paragraph;
