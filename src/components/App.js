@@ -6,8 +6,7 @@ import {
   Navbar,
   Nav,
   NavItem,
-  NavbarToggler,
-  NavbarBrand
+  NavbarToggler
 } from 'reactstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
@@ -50,7 +49,7 @@ class App extends Component {
             <Navbar light expand="md">
             <NavbarToggler onClick={this.toggleNavbar} />
               <Collapse isOpen={!this.state.collapsed} navbar>
-                  <Nav className="mx-auto" id="menu" navbar>
+                  <Nav className="mx-auto monospace-text" id="menu" navbar>
                     <NavItem><Link className="nav-link" to="/">Home</Link></NavItem>
                     <NavItem><Link className="nav-link" to="/about">About</Link></NavItem>
                     <NavItem><Link className="nav-link" to="/services">Services</Link></NavItem>

@@ -1,0 +1,7 @@
+.yellow-bit {
+    background-color: map-get($map: $lego-postit, $key: 'yellow')
+}
+
+.green-bit {
+    background-color: map-get($map: $lego-postit, $key: 'green')
+}
