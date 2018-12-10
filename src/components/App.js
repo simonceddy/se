@@ -56,14 +56,14 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App container">
-          <div className="App-header container monospace-text yellow-bit">
+        <div className="App container yellow-bit">
+          <div className="App-header container monospace-text">
             <h1 className="App-title"><span id="title-name">Simon Eddy</span><span id="title-seperator">::</span><span id="title-title">Web Development</span></h1>
           </div>
-          <div className="container green-bit" id="menu-container">
+          <div className="container blue-bit" id="menu-container">
             <Menu />            
           </div>
-          <Container className="yellow-bit" id="article">
+          <Container id="article">
               <Route exact path="/" render={props => <Article {...props} extra={articles.default.home} /> }/>
               <Route path="/about" render={props => <Article {...props} extra={articles.default.about} /> }/>
               <Route path="/services" render={props => <Article {...props} extra={articles.default.services} /> }/>

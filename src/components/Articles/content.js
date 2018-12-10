@@ -44,8 +44,7 @@ const Articles = {
         title: 'Welcome',
         content: () => {
             return <div className="container">
-                My new site is finally online!<br></br>
-                I've tried to go with a Lego meets Post-it note look, and I think I've made a decent job of it!<br></br>
+                <p>Put introduction here - come up with brief summary of site contents and purpose</p>
             </div>
         }
     },
@@ -54,7 +53,8 @@ const Articles = {
         title: 'I, Simon',
         content: () => {
             return <div className="container">
-                Writing about yourself is hard, so bare with me!
+            <p>Brief history - from Phillip Island etc</p>
+            <p>Interests - music/audio, stats + sports</p>
             </div>
         }
     },
@@ -63,7 +63,7 @@ const Articles = {
         title: 'Previous Work and Examples',
         content: () => {
             return <div className="container">
-                            <span>Since 2014 Simon has worked on a number of projects with local community groups including:</span><br></br>
+                            <p><span>Since 2014 Simon has worked on a number of projects with local community groups including:</span></p>
         
         <ul>
             <li><span>Websites</span></li>
@@ -73,11 +73,12 @@ const Articles = {
         
          <br></br>
         
-        <h2><big><span>Examples of previous work (links open in new window)</span></big></h2>
-        
-        <a href="http://pidhs.org.au/" rel="noopener noreferrer" target="_blank"><img className="fit-to-container" alt="Phillip Island and District Historical Society" src="http://pidhs.org.au/gallery/logo1.png"/></a><br></br>
-        
-        <a href="http://piadgs.org.au/" rel="noopener noreferrer" target="_blank"><img className="fit-to-container" alt="Phillip Island And District Genealogical Society" src="http://piadgs.org.au/gallery/logo1.png"/></a><br></br>
+        <h3><big><span>Examples of previous work</span></big></h3>
+        <div className="text-center">
+            <a href="http://pidhs.org.au/" rel="noopener noreferrer" target="_blank"><img className="fit-to-container" alt="Phillip Island and District Historical Society" src="http://pidhs.org.au/gallery/logo1.png"/></a><br></br>
+            
+            <a href="http://piadgs.org.au/" rel="noopener noreferrer" target="_blank"><img className="fit-to-container" alt="Phillip Island And District Genealogical Society" src="http://piadgs.org.au/gallery/logo1.png"/></a><br></br>
+        </div>
             </div>
         }
     },

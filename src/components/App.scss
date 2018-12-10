@@ -35,12 +35,15 @@
 
 #menu-container {
   width: 100%;
+  size: 1em;
   font-size: 1.2em;
+  border: 0.2em solid;
 }
 
 
 .fit-to-container {
-  max-width: 80%;
+  max-width: 60%;
+  align-self: center;
 }
 
 @media only screen and (max-width: 700px) {
@@ -54,22 +57,33 @@
     display: inline-block;
   }
 
-  #menu-container {
-    size: 1em;
+  .fit-to-container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .fit-to-container {
+    max-width: 80%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .App {
     max-width: 80%;
+    border-left: 0.2em solid;
+    border-right: 0.2em solid;
   }
   #footer {
     max-height: 60px;
+  }
+  .fit-to-container {
+    max-width: 60%;
   }
 }
 
 @media only screen and (min-width: 700px) {  
   #article {
-    min-height: 70vh;
+    min-height: 67vh;
   }
 }
