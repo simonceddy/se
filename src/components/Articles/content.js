@@ -44,7 +44,10 @@ const Articles = {
         title: 'Welcome',
         content: () => {
             return <div className="container">
-                <p>Put introduction here - come up with brief summary of site contents and purpose</p>
+                <p>This site is currently under consutruction and contains a fair bit of strange test content.</p>
+                <p>
+                    Contact details are all still accurate.
+                </p>
             </div>
         }
     },
