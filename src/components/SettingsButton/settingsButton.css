@@ -1,0 +1,9 @@
+.settings-button {
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 950px) {
+  .settings-button {
+    right: 0;
+  }
+}

@@ -1,26 +1,21 @@
 {
-  "name": "se",
+  "name": "sesite1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.8",
-    "@fortawesome/free-brands-svg-icons": "^5.5.0",
-    "@fortawesome/free-regular-svg-icons": "^5.5.0",
-    "@fortawesome/free-solid-svg-icons": "^5.5.0",
-    "@fortawesome/react-fontawesome": "^0.1.3",
-    "bootstrap": "^4.1.3",
-    "jquery": "^3.3.1",
-    "node-sass": "^4.9.4",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-render-html": "^0.6.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-icons": "^3.4.0",
+    "react-lorem-component": "^0.13.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
-    "reactstrap": "^6.5.0"
+    "react-scripts": "^2.1.8",
+    "rodal": "^1.6.3",
+    "tailwindcss": "^0.7.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "tailwind:css": "tailwind build src/shared/styles/tailwind.src.css -c  tailwind.js -o src/shared/styles/tailwind.css",
+    "start": "npm run tailwind:css && react-scripts start",
+    "build": "npm run tailwind:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

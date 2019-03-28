@@ -1,0 +1,31 @@
+.header {
+  font-size: 1.6rem;
+}
+
+.header > a {
+  text-decoration: none;
+}
+
+.header > a:hover > h1 {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+}
+
+.header > a:hover > .header-spacer {
+  text-decoration: none;
+}
+
+.header > a > .header-spacer {
+  color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  .header > a {
+    font-size: 1.4rem;
+    flex-direction: column;
+  }
+
+  .header-spacer {
+    display: none;
+  }
+}

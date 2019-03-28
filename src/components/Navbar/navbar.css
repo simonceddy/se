@@ -1,0 +1,33 @@
+.navbar {
+  border-top: thin grey solid;
+  border-bottom: thin grey solid;
+}
+
+.navbar > a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.navbar > .active {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .collapsed > .navbar-link {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+}
