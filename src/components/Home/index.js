@@ -5,7 +5,7 @@ const Home = () => {
     <div>
       <h1 className="theme-font-main">Welcome</h1>
       <p className="m-4">
-        This site is current undergoing a lot of work. Who's idea was it for me to make my own site anyway? (Ps: it was mine...)
+        This site is currently undergoing a lot of work. Who's idea was it for me to make my own site anyway? (Ps: it was mine...)
       </p>
 
       <p className="m-4">
