@@ -3,11 +3,6 @@ code {
     monospace;
 }
 
-.mono-font {
-  font-family: 'Inconsolata', monospace;
-  font-weight: 700;
-}
-
 .nav-link {
   text-decoration: none;
   color: #296fa8;

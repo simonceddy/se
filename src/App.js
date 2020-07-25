@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-//import Rodal from 'rodal';
+// import Rodal from 'rodal';
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import AppRoutes from './routes';
 import Footer from './components/Footer';
-//import SettingsButton from './components/SettingsButton';
-//import Settings from './components/Settings';
-//import 'rodal/lib/rodal.css'
 
 class App extends Component {
   constructor() {
@@ -15,13 +12,13 @@ class App extends Component {
     this.state = {
       theme: 'default',
       settingsVisible: false,
-    }
+    };
 
-/*     this.selectTheme = this.selectTheme.bind(this);
+    /*     this.selectTheme = this.selectTheme.bind(this);
     this.hideSettings = this.hideSettings.bind(this);
     this.toggleSettings = this.toggleSettings.bind(this); */
   }
-/* 
+  /*
   selectTheme(event) {
     console.log(event);
   }
@@ -61,7 +58,7 @@ class App extends Component {
         </div>
         <Footer />
         {/* <SettingsButton toggle={this.toggleSettings}/> */}
-        
+
       </div>
     );
   }

@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './shared/styles/tailwind.css';
-import './shared/styles/themes/default-white.css';
-import './index.css';
-import App from './App';
+import './shared/styles/index.css';
+import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
