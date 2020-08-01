@@ -29,6 +29,7 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/jsx-one-expression-per-line': 'off',
     'react/destructuring-assignment': 'off',
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    'react/no-array-index-key': 'off',
   },
 };

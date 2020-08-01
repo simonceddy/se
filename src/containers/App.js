@@ -1,17 +1,23 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Header from '../components/Header';
-import AppRoutes from '../routes';
-import Footer from '../components/Footer';
+import SelectTheme from '../components/SelectTheme';
+import { modes } from '../themes';
 
-function App() {
+function App({
+  themeMode,
+  setTheme
+}) {
+  const onChange = (e) => {
+    setTheme(e.target.value);
+  };
+
   return (
     <Layout>
-      <Header />
-      <div className="w-full flex-1">
-        <AppRoutes />
-      </div>
-      <Footer />
+      <SelectTheme
+        themes={modes}
+        value={themeMode}
+        onChange={onChange}
+      />
     </Layout>
   );
 }

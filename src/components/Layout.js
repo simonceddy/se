@@ -1,10 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
+import theme from 'styled-theming';
+import { colourMaps } from '../themes';
+
+const backgroundColour = theme('mode', colourMaps.background);
+const textColour = theme('mode', colourMaps.text);
+
+const StyledLayout = styled.div`
+  background-color: ${backgroundColour};
+  color: ${textColour};
+`;
 
 function Layout({ children }) {
   return (
-    <div className="mx-auto min-h-full w-full sm:w-5/6 md:w-3/4 lg:w-2/3">
+    <StyledLayout className="w-full min-h-full">
       {children}
-    </div>
+    </StyledLayout>
   );
 }
 

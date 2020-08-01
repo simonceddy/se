@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import './shared/styles/tailwind.css';
 import './shared/styles/index.css';
-import Root from './containers/Root';
+import App from './containers/App';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <Router>
-    <Root />
+    <ThemeProvider theme={{ mode: 'default' }}>
+      <App />
+    </ThemeProvider>
   </Router>,
   document.getElementById('root')
 );
@@ -15,4 +19,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-// serviceWorker.unregister();
+serviceWorker.unregister();

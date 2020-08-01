@@ -16,7 +16,7 @@ const StyledHeader = styled.div`
 
 function Header() {
   return (
-    <StyledHeader className="flex justify-center text-2xl font-mono mx-4 my-2">
+    <StyledHeader className="flex justify-center mx-4 my-2">
       <Link to="/" className="flex justify-center">
         <Title />
       </Link>

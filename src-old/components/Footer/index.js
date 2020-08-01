@@ -1,6 +1,6 @@
 import React from 'react';
-import PhoneIcon from './Footer/PhoneIcon';
-import MailIcon from './Footer/MailIcon';
+import PhoneIcon from './PhoneIcon';
+import MailIcon from './MailIcon';
 
 function Footer() {
   return (

@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   theme: {
-    fontSize: {
+    /* fontSize: {
       'xs': '.75rem',
       'sm': '.875rem',
       'tiny': '.875rem',
@@ -15,7 +15,7 @@ module.exports = {
       '5xl': '2.7rem',
       '6xl': '4rem',
       '7xl': '5rem',
-    },
+    }, */
     extend: {
       fontFamily: {
         sans: [
@@ -27,14 +27,14 @@ module.exports = {
           ...defaultTheme.fontFamily.mono
         ]
       },
-      colors: {
+      /* colors: {
         'dark-blue': '#296fa8',
         'med-blue': '#3490dc',
-      }
+      } */
     }
   },
   variants: [
-    'hover', 'responsive', 'active',
+    'responsive',
   ],
   plugins: [],
 };

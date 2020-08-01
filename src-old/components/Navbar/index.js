@@ -20,16 +20,18 @@ class Navbar extends React.Component {
   }
 
   collapseMenu() {
-    if (!this.state.isCollapsed) this.setState({
-      isCollapsed: true
-    });
+    if (!this.state.isCollapsed) {
+      this.setState({
+        isCollapsed: true
+      });
+    }
   }
 
   render() {
-    let style = (this.state.isCollapsed) ? " collapsed" : "";
+    const style = (this.state.isCollapsed) ? ' collapsed' : '';
     return (
-      <div className={"navbar flex justify-around theme-font-main mx-4 my-2" + style}>
-        <span className="nav-link menu-toggle" onClick={this.toggleMenu}>MENU</span>
+      <div className={`navbar flex justify-around theme-font-main mx-4 my-2${style}`}>
+        <span role="presentation" className="nav-link menu-toggle" onClick={this.toggleMenu}>MENU</span>
         <NavbarLink to="/" exact name="Home" handler={this.collapseMenu} />
         <NavbarLink to="/about" name="About" handler={this.collapseMenu} />
         <NavbarLink to="/work" name="Work" handler={this.collapseMenu} />
